@@ -12,7 +12,9 @@
     "build": "node ./generate-config",
     "add:base": "node ./generate-base-image",
     "add:included": "node ./generate-included-image",
-    "check:markdown": "find . -type f -name '*.md' ! -path './node_modules/*' ! -path './examples/*' | xargs -L1 npx markdown-link-check --quiet"
+    "check:markdown": "find . -type f -name '*.md' ! -path './node_modules/*' ! -path './examples/*' | xargs -L1 npx markdown-link-check --quiet",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">=12"
@@ -34,5 +36,9 @@
     "semver": "7.1.3",
     "shelljs": "0.8.3",
     "slugify": "^1.4.7"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
