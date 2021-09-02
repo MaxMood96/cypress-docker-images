@@ -1,4 +1,4 @@
-FROM node:8.16.0
+FROM node:8.16.2
 
 # install Cypress OS dependencies
 # but do not install recommended libs and clean temp files
