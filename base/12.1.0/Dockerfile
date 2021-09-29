@@ -1,4 +1,4 @@
-FROM node:12.1.0
+FROM node:12.22
 
 # install Cypress OS dependencies
 # but do not install recommended libs and clean temp files
