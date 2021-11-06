@@ -1,4 +1,4 @@
-FROM node:12.12.0
+FROM node:12.22.7
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
