@@ -5,7 +5,7 @@
 # build it with command
 #   docker build -t cypress/base:10.16.3 .
 #
-FROM node:10.16.3-buster
+FROM node:dubnium-buster
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
