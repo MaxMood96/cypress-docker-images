@@ -1,4 +1,4 @@
-FROM node:13.3.0
+FROM node:13.11
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
