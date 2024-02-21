@@ -5,7 +5,7 @@
 # build it with command
 #   docker build -t cypress/base:14.10.1 .
 #
-FROM node:14.10.1-buster
+FROM node:14.21.3-buster
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
