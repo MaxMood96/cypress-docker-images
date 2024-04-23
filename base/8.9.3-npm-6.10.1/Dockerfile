@@ -1,4 +1,4 @@
-FROM node:8.9.3
+FROM node:8.16.2
 
 # a few environment variables to make NPM installs easier
 #
