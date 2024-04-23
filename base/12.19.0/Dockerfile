@@ -5,7 +5,7 @@
 # build it with command
 #   docker build -t cypress/base:12.19.0 .
 #
-FROM node:12.19.0-buster
+FROM node:12.22.7-buster
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
