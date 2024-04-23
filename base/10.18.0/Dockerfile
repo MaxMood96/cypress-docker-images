@@ -1,4 +1,4 @@
-FROM node:10.18.0
+FROM node:10.23.3
 
 RUN echo "user $(whoami)"
 
