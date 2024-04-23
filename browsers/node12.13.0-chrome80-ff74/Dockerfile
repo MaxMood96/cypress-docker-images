@@ -1,4 +1,4 @@
-FROM node:12.13.0-buster
+FROM node:erbium-buster
 
 RUN apt-get update && \
   apt-get install --no-install-recommends -y \
