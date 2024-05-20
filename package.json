@@ -31,7 +31,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-jest": "^27.5.1",
     "glob-parent": "^6.0.2",
-    "globby": "10.0.1",
+    "globby": "11.0.0",
     "jest": "^27.5.1",
     "json-schema": "~0.4.0",
     "lodash": "4.17.21",
