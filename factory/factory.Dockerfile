@@ -1,5 +1,7 @@
-# Set base image arg to allow easy testing of other debian versions.
-ARG BASE_IMAGE
+# BASE_IMAGE is expected to be overridden
+# Regular builds, using docker compose, take the value from
+# the .env file in the same directory as this file
+ARG BASE_IMAGE='debian:12-slim'
 
 FROM ${BASE_IMAGE} AS factory
 
@@ -121,7 +123,6 @@ ONBUILD RUN apt-get purge -y --auto-remove \
     gnupg \
     dirmngr\
   && rm -rf /usr/share/doc \
-  && rm -rf /usr/share/man \
   && rm -rf /var/lib/apt/lists/* \
   # Remove cypress install scripts
   && rm -rf /opt/installScripts
